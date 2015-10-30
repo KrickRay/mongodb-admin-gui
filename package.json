@@ -1,11 +1,11 @@
 {
-  "author": "https://github.com/andzdroid",
-  "name": "mongodb-gui-client",
+  "author": "https://github.com/KrickRay",
+  "name": "mongodb-admin-gui",
   "description": "Web-based admin interface for MongoDB",
   "version": "0.23.6",
   "repository": {
     "type": "git",
-    "url": "git://github.com/andzdroid/mongo-express.git"
+    "url": "git://github.com/KrickRay/mongodb-admin-gui.git"
   },
   "dependencies": {
     "async": "1.4.2",
@@ -34,7 +34,7 @@
   "scripts": {
     "start": "node app",
     "test": "./node_modules/mocha/bin/mocha",
-    "build": "nwbuild -v 0.12.3 -p wind32,win64,osx32,osx64,linux32,linux64 .",
+    "build": "nwbuild -v 0.12.3 -p win32,win64,osx32,osx64,linux32,linux64 .",
     "build-win64": "nwbuild -v 0.12.3 -p win64 ."
   },
   "main": "http://localhost:8081",

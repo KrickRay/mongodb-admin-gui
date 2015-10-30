@@ -1,12 +1,8 @@
-mongo-express
+MongoDB Admin GUI
 =============
 
-Web-based MongoDB admin interface written with Node.js and express
-
-[![Build Status](https://secure.travis-ci.org/andzdroid/mongo-express.png?branch=master)](http://travis-ci.org/andzdroid/mongo-express) - Master (stable) branch
-
-[![Build Status](https://secure.travis-ci.org/andzdroid/mongo-express.png?branch=develop)](http://travis-ci.org/andzdroid/mongo-express) - Develop branch
-
+Web-based MongoDB admin interface written with Node.js and express and use NW.js.
+Desktop version for [Based on mongo-express](https://github.com/andzdroid/mongo-express).
 
 Features
 --------
