@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MongoDB Admin GUI</title>
+    <meta http-equiv="refresh" content="0; url=http://localhost:8082" />
+    <style>
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-family: Arial;
+            color: #333;
+        }
+        .boot-wrapper,
+        .boot {
+            height: 100%;
+            width: 100%;
+        }
+        .boot-wrapper {
+            display: table;
+        }
+        .boot {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .boot_header {
+            font-size: 28px;
+        }
+        .boot_load {
+            font-size: 28px;
+        }
+        #load {
+            display: inline-block;
+            width: 9px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="boot-wrapper">
+    <div class="boot">
+        <h1 class="boot_header">MongoDB Admin GUI</h1>
+        <p class="boot_load">Hi, I load <span id="load">|</span></p>
+    </div>
+</div>
+
+<script>
+    var loadEl = document.getElementById('load');
+    document.addEventListener('load', updateLoad());
+    function updateLoad() {
+        setTimeout(function() {
+            switch(loadEl.innerHTML){
+                case '\\':
+                    loadEl.innerHTML = '|';
+                    break;
+                case '|':
+                    loadEl.innerHTML = '/';
+                    break;
+                case '/':
+                    loadEl.innerHTML = '-';
+                    break;
+                case '-':
+                    loadEl.innerHTML = '\\';
+                    break;
+            }
+            updateLoad();
+        }, 80);
+    }
+</script>
+
+</body>
+</html>

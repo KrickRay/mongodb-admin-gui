@@ -37,7 +37,7 @@
     "build": "nwbuild -v 0.12.3 -p win32,win64,osx32,osx64,linux32,linux64 .",
     "build-win64": "nwbuild -v 0.12.3 -p win64 ."
   },
-  "main": "http://localhost:8081",
+  "main": "./index.html",
   "node-main": "./app.js",
   "window": {
     "toolbar": false,
