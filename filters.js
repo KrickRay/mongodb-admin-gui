@@ -27,5 +27,5 @@ exports.convertBytes = function(input) {
 };
 
 exports.to_string = function (input) {
-    return input !== null ? input.toString() : '';
+    return input ? input.toString() : '';
 };

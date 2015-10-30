@@ -1,7 +1,8 @@
 'use strict';
 
 var express     = require('express');
-var config      = require('./config');
+var path        = require('path');
+var config      = require(path.dirname(process.execPath)+'/config');
 var middleware  = require('./middleware');
 
 var app = express();

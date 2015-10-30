@@ -1,6 +1,6 @@
 {
   "author": "https://github.com/andzdroid",
-  "name": "mongo-express",
+  "name": "mongodb-gui-client",
   "description": "Web-based admin interface for MongoDB",
   "version": "0.23.6",
   "repository": {
@@ -19,19 +19,30 @@
     "method-override": "2.3.5",
     "mongodb": "2.0.43",
     "morgan": "1.6.1",
+    "path": "^0.12.7",
     "serve-favicon": "2.3.0",
     "swig": "1.4.2",
     "underscore": "1.8.3"
   },
   "devDependencies": {
+    "chai": "3.3.0",
     "mocha": "2.3.3",
-    "chai": "3.3.0"
+    "nw-builder": "^2.0.2"
   },
   "engine": "node >= 0.10",
   "license": "MIT",
   "scripts": {
     "start": "node app",
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "build": "nwbuild -v 0.12.3 -p wind32,win64,osx32,osx64,linux32,linux64 .",
+    "build-win64": "nwbuild -v 0.12.3 -p win64 ."
   },
-  "main": "./middleware"
+  "main": "http://localhost:8081",
+  "node-main": "./app.js",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 500,
+    "icon": "./public/images/favicon.ico"
+  }
 }
