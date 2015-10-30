@@ -41,7 +41,7 @@ interface can be used for executing malicious javascript on a server**.
 Screenshots
 -----------
 
-<img src="http://i.imgur.com/DOi3b.png" title="Viewing documents in a collection" />
+<img src="https://raw.githubusercontent.com/KrickRay/mongodb-admin-gui/master/public/images/mongo-express.png" title="Viewing documents in a collection" />
 
 Click here for more screenshots:
 [http://imgur.com/a/OTZHe](http://imgur.com/a/OTZHe)
@@ -52,17 +52,9 @@ These screenshots are from version 0.11.0.
 Usage
 -----
 
-**To install:**
-
-    npm install mongo-express
-
-Or if you want to install a global copy:
-
-    npm install -g mongo-express
-
 **To configure:**
 
-Copy `YOUR_PATH/node_modules/mongo-express/config.default.js` into a new file called `YOUR_PATH/node_modules/mongo-express/config.js`.
+Edit `config.js`.
 
 *Note:* Populate the defaultKeyNames field with your database names, collection names and the key name to be displayed by default in the documents list of collections page.
 
@@ -157,14 +149,6 @@ You can use the following [environment variables](https://docs.docker.com/refere
 - Variable name: `ME_CONFIG_OPTIONS_EDITORTHEME`
 - Description: Web editor color theme.
 - Default value: `rubyblue`
-
--
-
-**To use:**
-
-Visit `http://localhost:8081` or whatever URL/port you entered into your
-config (if running standalone) or whatever `config.site.baseUrl` (if mounting
-as a middleware).
 
 
 BSON Data Types

@@ -32,8 +32,8 @@ module.exports = {
     //  >>>>  Using an admin account allows you to view and edit all databases, and view stats
 
     //leave username and password empty if no admin account exists
-    adminUsername: process.env.ME_CONFIG_MONGODB_ADMINUSERNAME || '',
-    adminPassword: process.env.ME_CONFIG_MONGODB_ADMINPASSWORD || '',
+    adminUsername: '',
+    adminPassword: '',
     //whitelist: hide all databases except the ones in this list  (empty list for no whitelist)
     whitelist: [],
     //blacklist: hide databases listed in the blacklist (empty list for no blacklist)
@@ -43,12 +43,12 @@ module.exports = {
   site: {
     host: '0.0.0.0', // it should be 0.0.0.0
     port: 8081, // it should be 8081
-    cookieSecret: process.env.ME_CONFIG_SITE_COOKIESECRET || 'cookiesecret',
-    sessionSecret: process.env.ME_CONFIG_SITE_SESSIONSECRET || 'sessionsecret',
+    cookieSecret: 'cookiesecret',
+    sessionSecret: 'sessionsecret',
     cookieKeyName: 'mongo-express',
-    sslEnabled: process.env.ME_CONFIG_SITE_SSL_ENABLED || false,
-    sslCert: process.env.ME_CONFIG_SITE_SSL_CRT_PATH || '',
-    sslKey: process.env.ME_CONFIG_SITE_SSL_KEY_PATH || ''
+    sslEnabled: false,
+    sslCert: '',
+    sslKey: ''
   },
 
   //set useBasicAuth to true if you want to authehticate mongo-express loggins
@@ -66,7 +66,7 @@ module.exports = {
     documentsPerPage: 10,
     //editorTheme: Name of the theme you want to use for displaying documents
     //See http://codemirror.net/demo/theme.html for all examples
-    editorTheme: process.env.ME_CONFIG_OPTIONS_EDITORTHEME || 'rubyblue',
+    editorTheme: 'rubyblue',
 
     //The options below aren't being used yet
 
