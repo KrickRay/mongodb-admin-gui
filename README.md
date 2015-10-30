@@ -1,8 +1,7 @@
 MongoDB Admin GUI
 =============
 
-Web-based MongoDB admin interface written with Node.js and express and use NW.js.
-Desktop version for [Based on mongo-express](https://github.com/andzdroid/mongo-express).
+Desktop web-based MongoDB admin interface written with Node.js and express and use NW.js. Based on [mongo-express](https://github.com/andzdroid/mongo-express).
 
 Features
 --------
